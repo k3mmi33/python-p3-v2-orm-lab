@@ -9,9 +9,9 @@ import ipdb
 
 
 def reset_database():
-    Review.drop_table()
-    Employee.drop_table()
     Department.drop_table()
+    Employee.drop_table()
+    Review.drop_table()
     Department.create_table()
     Employee.create_table()
     Review.create_table()
